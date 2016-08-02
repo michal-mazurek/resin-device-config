@@ -138,11 +138,6 @@ describe 'Device Config:', ->
 					delta: 'https://delta.resin.io'
 			,
 				network: 'wifi'
-				wifiSsid: 'mywifi'
-				wifiKey: 'secret'
-
-			m.chai.expect(config.wifiSsid).to.equal('mywifi')
-			m.chai.expect(config.wifiKey).to.equal('secret')
 
 		it 'should parse vpnPort as an integer automatically', ->
 			config = deviceConfig.generate
